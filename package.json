@@ -1,0 +1,48 @@
+{
+    "name": "wine-fox-translator",
+    "displayName": "WineFoxTranslator",
+    "description": "A tool for Minecraft Modding translation projects",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:wine-fox-translator.update-sort",
+        "onCommand:wine-fox-translator.update-add"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "wine-fox-translator.update-sort",
+                "title": "更新并排序语言文件"
+            },
+            {
+                "command": "wine-fox-translator.update-add",
+                "title": "更新并添加语言文件"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.65.0",
+        "@types/glob": "^7.2.0",
+        "@types/mocha": "^9.1.0",
+        "@types/node": "14.x",
+        "eslint": "^8.9.0",
+        "glob": "^7.2.0",
+        "mocha": "^9.2.1",
+        "typescript": "^4.5.5",
+        "@vscode/test-electron": "^2.1.2"
+    },
+    "dependencies": {
+        "json5": "^2.2.1"
+    }
+}
