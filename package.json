@@ -1,7 +1,7 @@
 {
     "name": "wine-fox-translator",
     "displayName": "WineFoxTranslator",
-    "publisher": "baka943",
+    "publisher": "tartaric-acid",
     "description": "A tool for Minecraft Modding translation projects",
     "version": "0.0.1",
     "engines": {
