@@ -15,8 +15,7 @@
     ],
     "main": "./extension.js",
     "contributes": {
-        "commands": [
-            {
+        "commands": [{
                 "command": "wine-fox-translator.update-sort",
                 "title": "更新并排序语言文件"
             },
@@ -27,9 +26,7 @@
         ]
     },
     "scripts": {
-        "lint": "eslint .",
-        "pretest": "npm run lint",
-        "test": "node ./test/runTest.js"
+        "build": "rollup -c"
     },
     "devDependencies": {
         "@types/vscode": "^1.65.0",
@@ -40,7 +37,11 @@
         "glob": "^7.2.0",
         "mocha": "^9.2.1",
         "typescript": "^4.5.5",
-        "@vscode/test-electron": "^2.1.2"
+        "@vscode/test-electron": "^2.1.2",
+        "@rollup/plugin-commonjs": "^12.0.0",
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "rollup": "2.3.4",
+        "rollup-plugin-terser": "^7.0.2"
     },
     "dependencies": {
         "json5": "^2.2.1"
