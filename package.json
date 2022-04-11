@@ -1,6 +1,7 @@
 {
     "name": "wine-fox-translator",
     "displayName": "WineFoxTranslator",
+    "publisher": "WineFoxTranslator",
     "description": "A tool for Minecraft Modding translation projects",
     "version": "0.0.1",
     "engines": {
